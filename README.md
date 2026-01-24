@@ -1,2 +1,1 @@
-# template
 # pantry-proxy-api
