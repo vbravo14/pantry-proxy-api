@@ -16,12 +16,12 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
-          res.sendFile(path.join(__dirname, 'index.html'))
-})
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 app.get('/favicon.ico', (req, res) => {
-          res.sendFile(path.join(__dirname, 'favicon.ico'))
-})
+  res.sendFile(path.join(__dirname, 'public', 'favicon.ico'));
+});
 
 // Generic handler for GET request to fetch data from specific basket
 app.get('/:basketName', async (req, res) => {
