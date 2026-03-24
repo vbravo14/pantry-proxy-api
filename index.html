@@ -3,6 +3,46 @@
 <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Quiz Game</title>
+          <!-- Grab Favicon from Google (Might be unsupported in the future) -->
+           <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=https://victorbravodev.com/">
+          <link rel="stylesheet" href="style.css">
+</head>
+<body>
+          <div class="quiz-container">
+                    <!-- Quiz Box -->
+                     <div id="quiz-box">
+                             <h1 id="question-number">Question 1</h1>
+                             <h2 id="question-text">What is going tobe the first question?</h2>
+                             <div id="timer">Time Left: <span id="time-left">10</span>s</div>
+                             <div id="choices-container">
+                             </div>
+                             <button type="button" id="next-btn" class="btn">Next</button>
+                     </div>
+                     <!-- Loader -->
+                      <div id="loader" style="display: none;">
+                        <h2>Loading High Scores...</h2>
+                      </div>
+                      <!-- High Scores -->
+                       <div id="high-score-container" style="display: none;">
+                        <table id="high-scores-table">
+                                <thead>
+                                        <tr>
+                                                <th>Name</th>
+                                                <th>Score</th>
+                                                <th>Date</th>
+                                        </tr>
+                                </thead>
+                                <tbody id="high-scores-list">
+                                </tbody>
+                        </table>
+                        <button type="button" id="play-again-btn" class="btn">Play Again</button>
+                       </div>
+          </div>
+
+
+          <!-- Script -->
+           <script src="script.js"></script>
           <title>Pantry API</title>
 </head>
 <body>
