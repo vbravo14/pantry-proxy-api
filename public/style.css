@@ -65,6 +65,10 @@ h2 {
           background-color: #ddd;
 }
 
+.choice:disabled {
+          cursor: default;
+}
+
 .choice.correct {
           background-color: #28a745;
           color: white;
@@ -89,6 +93,12 @@ h2 {
 
 .btn:hover {
           background-color: #0056b3;
+}
+
+.btn:disabled {
+          background-color: #ccc;
+          color: #333;
+          cursor: not-allowed;
 }
 
 /* High Scores */
